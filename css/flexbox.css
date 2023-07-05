@@ -1,0 +1,122 @@
+/* Header */
+.headerPrincipal .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerPrincipal-nav {
+    display: flex;
+}
+
+/* Main */
+.contenidoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos-link {
+    display: flex;
+    width: 23%;
+}
+
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-sobre {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+    flex-grow: 1;
+}
+
+.videoSobre-video {
+	flex-grow: 1;
+	flex-shrink: 2;
+}
+
+.videoSobre-sobre-list{
+    flex-grow: 1;
+}
+
+/* Footer */
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    flex-wrap: wrap;
+}
+
+.rodapePrincipal-patrocinadores .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rodapePrincipal-contatoForm {
+   width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+@media(max-width: 768px) {
+    /* Header */
+    .headerPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+    .headerPrincipal-nav {
+        flex-direction: column;
+    }
+
+    .headerPrincipal-nav-link-app {
+		order: -1;
+	}
+
+    /* Main */
+    .contenidoPrincipal-cursos {
+        flex-direction: column;
+    }
+    
+    .contenidoPrincipal-cursos-link {
+        width: 100%;
+    }
+
+    .videoSobre .container {
+        flex-direction: column;
+    } 
+
+    /* Footer */
+    .rodapePrincipal-navMap-list {
+        flex-wrap: nowrap;
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+    }
+    
+    .rodapePrincipal-contatoForm {
+		width: 100%;
+	}
+
+    .rodapePrincipal-patrocinadores-list {
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+		justify-content: center;
+	}
+}
